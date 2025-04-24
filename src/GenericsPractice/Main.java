@@ -14,6 +14,5 @@ public class Main {
         Toolbox<Screwdriver> screwdriverBox = new Toolbox<>();
         screwdriverBox.setTool(screwdriver);
         screwdriverBox.showToolInfo();  // 调用 showToolInfo 方法
-
     }
 }
