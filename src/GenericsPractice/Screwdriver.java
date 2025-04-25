@@ -11,6 +11,7 @@ public class Screwdriver {
         this.price = price;
     }
 
+    /*
     public String getbrandName(){
         return brandName;
     }
@@ -20,6 +21,7 @@ public class Screwdriver {
     public double getprice(){
         return price;
     }
+     */
 
     public void printInfo(){
         System.out.println(brandName+"品牌的 "+texture+"制螺丝刀 "+price+"元");

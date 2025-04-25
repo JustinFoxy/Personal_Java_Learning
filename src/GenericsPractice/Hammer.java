@@ -11,6 +11,7 @@ public class Hammer {
         this.price = price;
     }
 
+    /*
     public String getbrandName(){
         return brandName;
     }
@@ -20,6 +21,7 @@ public class Hammer {
     public double getprice(){
         return price;
     }
+     */
 
     //主动控制打印方式
     public void printInfo(){

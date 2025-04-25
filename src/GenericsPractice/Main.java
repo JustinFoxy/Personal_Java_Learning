@@ -5,7 +5,7 @@ public class Main {
 
         // ✅创建锤子和螺丝刀
         Hammer hammer = new Hammer("德里希", "钢", 25);
-        Screwdriver screwdriver=new Screwdriver("南旗","金属",10);
+        Screwdriver screwdriver=new Screwdriver("南旗","金属",10.5);
         // 创建装锤子的工具箱
         Toolbox<Hammer> hammerBox = new Toolbox<>();
         hammerBox.setTool(hammer);
