@@ -1,11 +1,11 @@
-package GenericsPractice;
+package Generics.GenericsPractice;
 
-public class Screwdriver {
+public class Hammer {
     private String brandName;
     private String texture;
     private double price;
 
-    public Screwdriver(String brandName, String texture, double price) {
+    public Hammer(String brandName, String texture, double price) {
         this.brandName = brandName;
         this.texture = texture;
         this.price = price;
@@ -23,12 +23,15 @@ public class Screwdriver {
     }
      */
 
+    //主动控制打印方式
     public void printInfo(){
-        System.out.println(brandName+"品牌的 "+texture+"制螺丝刀 "+price+"元");
+        System.out.println(brandName+"品牌的 "+texture+"制锤子 "+price+"元");
     }
 
+    //更简洁统一，用 toString() ，这里需要重写toString()方法
     @Override
     public String toString() {
-        return brandName + "品牌的 " + texture + "制螺丝刀，价格：" + price + "元";
+        return brandName + "品牌的 " + texture + "制锤子，价格：" + price + "元";
     }
+
 }

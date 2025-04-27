@@ -1,6 +1,4 @@
-package test01;
-
-import java.util.Arrays;
+package Generics.test01;
 
 public class Main {
     public static void main(String[] args) {

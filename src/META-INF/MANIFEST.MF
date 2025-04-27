@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: Generics_learning.Main
+Main-Class: Generics.Generics_learning.Main
 

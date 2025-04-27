@@ -1,4 +1,4 @@
-package GenericsPractice;
+package Generics.GenericsPractice;
 
 public class Toolbox<T> {
     private T tool;

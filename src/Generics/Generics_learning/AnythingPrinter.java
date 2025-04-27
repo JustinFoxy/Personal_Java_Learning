@@ -1,4 +1,4 @@
-package Generics_learning;
+package Generics.Generics_learning;
 
 public class AnythingPrinter<T, K> {
     T content;

@@ -1,4 +1,4 @@
-package Generics_learning;
+package Generics.Generics_learning;
 
 public class IntegerPrinter {
      Integer content;

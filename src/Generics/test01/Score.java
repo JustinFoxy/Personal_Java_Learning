@@ -1,4 +1,4 @@
-package test01;
+package Generics.test01;
 
 public class Score<T extends Number> {   //设定类型参数上界，必须是Number或是Number的子类
     private final String name;

@@ -1,4 +1,4 @@
-package GenericsDemo;
+package Generics.GenericsDemo;
 
 public class Main {
     public static void main(String[] args) {

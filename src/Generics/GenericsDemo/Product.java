@@ -1,4 +1,4 @@
-package GenericsDemo;
+package Generics.GenericsDemo;
 
 public class Product {
     //初始化名字和价格

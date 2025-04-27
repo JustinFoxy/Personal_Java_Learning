@@ -1,4 +1,4 @@
-package GenericsDemo;
+package Generics.GenericsDemo;
 
 // 泛型类，T 可以是任何类型
 //范型box类
