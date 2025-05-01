@@ -2,9 +2,9 @@ package Exception.Exception_03;
 
 public class Main {
     public static void main(String[] args) {
-        DoorChecker dc = new DoorChecker();
+        DoorChecker doorChecker = new DoorChecker();
         try {
-            dc.checkDoorIsLocked();
+            doorChecker.checkDoorIsLocked();
         } catch (Exception e) {
             System.out.println("发生异常：" + e.getMessage());
         }

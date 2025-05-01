@@ -188,7 +188,115 @@ I/O 流虽然理解起来不算特别难，但要掌握不同类型流的使用�
 
 
 
-## 集合
+## 集合（Collection Framework）
+
+集合框架是 Java 中专门用来：
+
+- **存储一组对象**（比如一堆学生、商品、订单…）
+- **方便地遍历、搜索、增删改查**
+
+在实际开发里，集合用得特别多！！（SpringBoot到处是List、Map、Set）
+
+
+
+##### 集合是什么，为什么需要集合
+
+集合就是一种用来存储多个数据对象的工具
+
+```java
+package List;
+
+import java.util.ArrayList;
+import java.util.List;
+
+//放进去 5 个喜欢的水果 🍎🍉🍊🍇🍌,然后依次：打印所有水果、修改第3个水果、删除第5个水果、输出剩下的水果数量
+public class FruitList {
+    public static void main(String[] args) {
+        List<String> fruits = new ArrayList<>();
+        fruits.add("apple");
+        fruits.add("strawberry");
+        fruits.add("banana");
+        fruits.add("mango");
+        fruits.add("pear");
+
+        //打印所有水果
+        System.out.println("我喜欢的水果有："+fruits);
+        //修改第3个水果
+        fruits.set(2,"🍌");
+        //删除第5个水果
+        fruits.remove(4);
+        //输出剩下的水果数量
+        System.out.println("剩下的水果数量:"+fruits.size());
+    }
+}
+```
+
+## 遍历
+
+#### for循环（普通版）
+
+可以通过 i 访问每个元素，适合需要知道索引的位置。
+
+```java
+List<String> list = new ArrayList<>();
+list.add("苹果");
+list.add("香蕉");
+list.add("橘子");
+//	for循环实现遍历
+for (int i = 0; i < list.size(); i++) {
+    System.out.println(list.get(i));
+}
+```
+
+#### 增强for循环（foreach）
+
+更简洁，直接拿到每个元素，不用关心下标。（注意 : 左边是元素类型，右边是集合）
+
+```java
+for (String fruit : list) {
+  System.out.println(fruit);
+}
+```
+
+#### 迭代器（Iterator）
+
+更灵活，能在遍历时安全地删除元素。
+
+```java
+Iterator<String> iterator = list.iterator();
+while (iterator.hasNext()) {
+    String fruit = iterator.next();
+    System.out.println(fruit);
+}
+```
+
+##### 用Iterator正确删除
+
+```java
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class Demo02 {
+  public static void main(String[] args) {
+    List<String> fruits = new ArrayList<>();
+    fruits.add("苹果");
+    fruits.add("香蕉");
+    fruits.add("橘子");
+    
+    Iterator<String> iterator = fruits.iterator();
+    while (iterator.hasNext()) {
+      String fruit = iterator.next();
+ *     if (fruit.equals("香蕉")) {
+ *       iterator.remove(); // 	✅ 正确使用Iterator自己的remove
+      }
+    }
+    System.out.println(fruits);
+  }
+}
+```
+
+
 
 ## I/O 流
 
